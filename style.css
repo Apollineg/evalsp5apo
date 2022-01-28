@@ -1,0 +1,122 @@
+/*ma feuille de style*/
+
+#menu {
+  text-align:center;
+  margin:auto
+  }
+
+.ribbon {
+  display: inline-block;
+}
+.ribbon:after, .ribbon:before {
+    margin-top:0.5em;
+    content: "";
+    float:left;
+    border:1.5em solid rgb(184, 15, 155);
+  }
+  
+  .ribbon:after {
+    border-right-color:transparent;
+  }
+  
+  .ribbon:before {
+    border-left-color:transparent;
+  }
+
+  .ribbon a:link, .ribbon a:visited { 
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    float:left;
+    height:3.5em;
+    overflow:hidden;
+  }
+  .ribbon span {
+    background:rgb(184, 15, 155);
+    display:inline-block;
+    line-height:3em;
+    padding:0 1em;
+    margin-top:0.5em;
+    position:relative;
+    transition: background-color 0.2s, margin-top 0.2s;
+  }
+  
+  .ribbon a:hover span {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin-top:0;
+  }
+  
+  .ribbon span:before {
+    content: "";
+    position:absolute;
+    top:3em;
+    left:0;
+    border-right:0.5em solid #9B8651;
+    border-bottom:0.5em solid #fff;
+  }
+  
+  .ribbon span:after {
+    content: "";
+    position:absolute;
+    top:3em;
+    right:0;
+    border-left:0.5em solid #9B8651;
+    border-bottom:0.5em solid #fff;
+  }
+
+  img{
+    display: block; margin-left: auto; margin-right: auto;
+  }
+
+  #demotext {
+    color: #FFFFFF;
+    background: transparent;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: #FFFFFF;
+    background: transparent;
+    }
+
+body{
+    background-color: #8EC5FC;
+    text-align: center !important;
+    text-align: justify;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color:rgb(255, 255, 255);
+}
+
+  
+  .capsule {
+     margin-bottom: 20px;
+  }
+  
+  input{
+    padding: 10px 20px ;
+    border:1px solid black;
+    border-radius:0;
+    min-width: 220px
+  }
+  
+  input:focus{
+    outline:O;
+  }
+  
+  label{
+    min-width: 88px;
+    display:inline-block;
+  }
+  
+  button{
+    padding:20px;
+    text-transform: uppercase;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    ;
+    border:1px solid black;
+    color:white;
+    cursor:pointer;
+  }
+  
+  button:hover{
+    color:black;
+    background:white;
+  }
